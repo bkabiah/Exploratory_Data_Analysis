@@ -7,6 +7,23 @@ zur explorativen Analyse mit Visualisierungen — modular, dokumentiert und repr
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Abgeschlossen-brightgreen)
 
+---
+
+## 📘 Einführung
+
+In der heutigen datengetriebenen Wirtschaft ist die Fähigkeit, große und unstrukturierte
+Datensätze systematisch zu untersuchen, eine Kernkompetenz jedes Data Analysten. Dieses
+Projekt zeigt exemplarisch, wie aus rohen, fehlerbehafteten Verkaufsdaten eines fiktiven
+Online-Händlers durch einen strukturierten Workflow — angelehnt an den CRISP-DM-Standard —
+verwertbare geschäftliche Erkenntnisse gewonnen werden. Dabei werden typische Herausforderungen
+wie fehlende Werte, Duplikate, inkonsistente Kategorien und Ausreißer nicht nur erkannt,
+sondern auch nachvollziehbar bereinigt. Das Ergebnis ist eine saubere Datenbasis, die als
+Fundament für weiterführende Analysen, Dashboards oder Machine-Learning-Modelle dient und
+gleichzeitig als reproduzierbares Portfolio-Stück fungiert.
+
+---
+
+
 ## 🎯 Projektziel
 
 Dieses Projekt demonstriert einen vollständigen, professionellen EDA-Workflow anhand eines
@@ -15,6 +32,32 @@ Geschäftsfragen zu Umsatz, Produktkategorien, Regionen, Rabatten und Retouren b
 
 Den ausführlichen Projektplan mit Leitfragen und Methodik findest du unter
 [`docs/PROJEKTPLAN.md`](docs/PROJEKTPLAN.md).
+
+---
+
+## 🏗️ Architektur
+
+Das folgende Diagramm veranschaulicht den Datenfluss des Projekts — von der Erzeugung der
+Rohdaten bis zum exportierten Report:
+
+```mermaid
+graph LR
+    A[generate_data.py] -->|Erzeugt| B[(data/raw/<br>online_retail_sales.csv)]
+    B -->|Lädt| C[data_loader.py<br>clean_data]
+    C -->|Bereinigt| D[(data/processed/<br>sales_clean.csv)]
+    D -->|Analysiert| E[eda_utils.py<br>plot & analyze]
+    E -->|Visualisiert| F[notebooks/01_eda.ipynb]
+    F -->|Exportiert| G[reports/figures/<br>*.png]
+    
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style D fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style E fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style F fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style G fill:#e0f2f1,stroke:#00796b,stroke-width:2px
+
+```
 
 ## 🗂️ Projektstruktur
 
