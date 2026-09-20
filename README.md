@@ -53,30 +53,6 @@ graph LR
     style F fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
     style G fill:#e0f2f1,stroke:#00796b,stroke-width:2px
 
-```
-
-## 🗂️ Projektstruktur
-
-```
-eda-projekt/
-├── README.md                   # Diese Datei
-├── requirements.txt             # Python-Abhängigkeiten
-├── LICENSE                      # MIT-Lizenz
-├── .gitignore
-├── docs/
-│   └── PROJEKTPLAN.md           # Detaillierter Projektplan
-├── data/
-│   ├── raw/                     # Rohdaten (unverändert, generiert)
-│   └── processed/                # Bereinigte Daten (Output der Pipeline)
-├── src/
-│   ├── generate_data.py         # Erzeugt den synthetischen Rohdatensatz
-│   ├── data_loader.py           # Laden & Bereinigen der Daten
-│   └── eda_utils.py             # Wiederverwendbare Plot-/Analysefunktionen
-├── notebooks/
-│   └── 01_eda.ipynb             # Vollständige EDA (bereits ausgeführt, mit Outputs)
-└── reports/
-    └── figures/                  # Exportierte Diagramme (PNG)
-```
 
 ## Datensatz
 
