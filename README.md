@@ -1,30 +1,26 @@
-# 📊 Explorative Datenanalyse: Online-Retail-Verkaufsdaten
+# Explorative Datenanalyse: Online-Retail-Verkaufsdaten
 
-Ein vollständiges EDA-Portfolio-Projekt: von der Datengenerierung über die Bereinigung bis
+Ein vollständiges EDA-Projekt: von der Datengenerierung über die Bereinigung bis
 zur explorativen Analyse mit Visualisierungen — modular, dokumentiert und reproduzierbar.
-
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Abgeschlossen-brightgreen)
 
 ---
 
-## 📘 Einführung
+## Einführung
 
 In der heutigen datengetriebenen Wirtschaft ist die Fähigkeit, große und unstrukturierte
 Datensätze systematisch zu untersuchen, eine Kernkompetenz jedes Data Analysten. Dieses
-Projekt zeigt exemplarisch, wie aus rohen, fehlerbehafteten Verkaufsdaten eines fiktiven
+Projekt zeigt exemplarisch, wie aus rohen, fehlerbehafteten Verkaufsdaten eines
 Online-Händlers durch einen strukturierten Workflow — angelehnt an den CRISP-DM-Standard —
 verwertbare geschäftliche Erkenntnisse gewonnen werden. Dabei werden typische Herausforderungen
 wie fehlende Werte, Duplikate, inkonsistente Kategorien und Ausreißer nicht nur erkannt,
 sondern auch nachvollziehbar bereinigt. Das Ergebnis ist eine saubere Datenbasis, die als
 Fundament für weiterführende Analysen, Dashboards oder Machine-Learning-Modelle dient und
-gleichzeitig als reproduzierbares Portfolio-Stück fungiert.
+gleichzeitig als reproduzierbares Projekt fungiert.
 
 ---
 
 
-## 🎯 Projektziel
+## Projektziel
 
 Dieses Projekt demonstriert einen vollständigen, professionellen EDA-Workflow anhand eines
 (synthetischen) E-Commerce-Verkaufsdatensatzes: Datenqualität prüfen, bereinigen und zentrale
@@ -35,7 +31,7 @@ Den ausführlichen Projektplan mit Leitfragen und Methodik findest du unter
 
 ---
 
-## 🏗️ Architektur
+## Architektur
 
 Das folgende Diagramm veranschaulicht den Datenfluss des Projekts — von der Erzeugung der
 Rohdaten bis zum exportierten Report:
@@ -82,7 +78,7 @@ eda-projekt/
     └── figures/                  # Exportierte Diagramme (PNG)
 ```
 
-## 📦 Datensatz
+## Datensatz
 
 Da für ein öffentliches Portfolio-Projekt keine echten Kundendaten verwendet werden sollen,
 wird ein **synthetischer, aber realistisch modellierter** Online-Retail-Datensatz erzeugt
@@ -103,31 +99,9 @@ Die Methodik ist 1:1 auf echte Datensätze übertragbar.
 `discount_percent`, `payment_method`, `shipping_cost`, `delivery_days`, `customer_rating`,
 `is_returned`
 
-## 🚀 Schnellstart
 
-```bash
-# 1. Repository klonen
-git clone https://github.com/<dein-username>/eda-projekt.git
-cd eda-projekt
 
-# 2. Virtuelle Umgebung anlegen (empfohlen)
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-
-# 3. Abhängigkeiten installieren
-pip install -r requirements.txt
-
-# 4. Rohdatensatz generieren
-python src/generate_data.py
-
-# 5. Bereinigte Daten erzeugen (optional, wird auch im Notebook gemacht)
-python src/data_loader.py
-
-# 6. Notebook öffnen und ausführen
-jupyter notebook notebooks/01_eda.ipynb
-```
-
-## 🔍 Analyseschritte im Notebook
+## Analyseschritte im Notebook
 
 1. **Daten laden & Überblick verschaffen** — Struktur, Datentypen, Kennzahlen
 2. **Datenqualität prüfen** — fehlende Werte, Duplikate, inkonsistente Kategorien
@@ -139,7 +113,7 @@ jupyter notebook notebooks/01_eda.ipynb
 7. **Ausreißererkennung** — IQR-Methode für Preise und Lieferzeiten
 8. **Zusammenfassung** — zentrale Erkenntnisse & Ausblick
 
-## 📈 Beispielhafte Ergebnisse
+## Beispielhafte Ergebnisse
 
 | Diagramm | Beschreibung |
 |----------|--------------|
@@ -151,7 +125,7 @@ jupyter notebook notebooks/01_eda.ipynb
 | `reports/figures/return_rate_by_discount.png` | Retourenquote nach Rabattstufe |
 | `reports/figures/boxplot_unit_price.png` | Preisverteilung & Ausreißer je Kategorie |
 
-## 🧠 Zentrale Erkenntnisse (Zusammenfassung)
+## Zentrale Erkenntnisse (Zusammenfassung)
 
 - Der Rohdatensatz enthielt fehlende Werte, Duplikate und inkonsistente Kategoriewerte —
   diese wurden systematisch bereinigt (`clean_data()` in `src/data_loader.py`).
@@ -161,28 +135,19 @@ jupyter notebook notebooks/01_eda.ipynb
 - Einzelne Bestellungen weisen stark überhöhte Preise auf (mögliche Erfassungsfehler) und
   sollten vor einer produktiven Weiterverarbeitung geprüft werden.
 
-Die vollständige, ausführliche Analyse inkl. aller Diagramme befindet sich im Notebook
-[`notebooks/01_eda.ipynb`](notebooks/01_eda.ipynb).
 
-## 🛠️ Verwendete Technologien
+## Verwendete Technologien
 
 - Python 3.11
 - pandas, numpy — Datenverarbeitung
 - matplotlib, seaborn — Visualisierung
 - Jupyter Notebook — interaktive Analyse
 
-## 🔭 Mögliche Erweiterungen
+##  Mögliche Erweiterungen
 
 - Interaktives Dashboard (z. B. Streamlit/Plotly Dash)
 - Umsatzprognosemodell (Zeitreihenmodell)
 - Klassifikationsmodell zur Retourenvorhersage
 - RFM-/Kohortenanalyse der Kunden
 
-## 📄 Lizenz
 
-Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
-
-## 👤 Autor
-
-Erstellt von [Dein Name] — Data Engineer.
-Feedback und Pull Requests sind willkommen!
