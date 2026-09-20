@@ -2,7 +2,7 @@
 
 ## 1. Ausgangslage und Motivation
 
-Ein (fiktiver) Online-Händler möchte seine Verkaufsdaten aus den Jahren 2023–2024 besser
+Ein Online-Händler möchte seine Verkaufsdaten aus den Jahren 2023–2024 besser
 verstehen, bevor daraus Reporting-Dashboards oder Vorhersagemodelle (z. B. Umsatzprognose,
 Retourenrisiko) abgeleitet werden. Bevor solche Modelle entwickelt werden können, muss die
 Datenbasis verstanden, geprüft und bereinigt werden — das ist der Zweck dieser explorativen
