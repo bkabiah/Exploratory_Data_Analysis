@@ -72,13 +72,6 @@ Datenqualitätsprobleme:
 Dadurch lässt sich der komplette EDA-Workflow inklusive Datenbereinigung realistisch zeigen.
 Die Methodik ist 1:1 auf echte Datensätze übertragbar.
 
-**Spalten (Auszug):** `order_id`, `order_date`, `customer_id`, `customer_age`,
-`customer_region`, `product_category`, `product_name`, `quantity`, `unit_price`,
-`discount_percent`, `payment_method`, `shipping_cost`, `delivery_days`, `customer_rating`,
-`is_returned`
-
-
-
 ## Analyseschritte im Notebook
 
 1. **Daten laden & Überblick verschaffen** — Struktur, Datentypen, Kennzahlen
